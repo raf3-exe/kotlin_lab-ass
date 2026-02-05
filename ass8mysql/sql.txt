@@ -1,0 +1,12 @@
+CREATE TABLE employee (
+    emp_id INT(11) NOT NULL AUTO_INCREMENT,
+    emp_name VARCHAR(50) NOT NULL,
+    emp_gender VARCHAR(6) NOT NULL,
+    emp_email VARCHAR(100) NOT NULL,
+    emp_salary INT(11) NOT NULL,
+    PRIMARY KEY (emp_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO employee (emp_name, emp_gender, emp_email, emp_salary) VALUES
+('Alice', 'Female', 'alice@kku.ac.th', 50000),
+('Bob', 'Male', 'bob@kku.ac.th', 45000);
